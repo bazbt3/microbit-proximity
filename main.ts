@@ -29,7 +29,7 @@ let distance = 0
 pins.analogWritePin(AnalogPin.P0, 0)
 pins.analogWritePin(AnalogPin.P1, 0)
 pins.analogWritePin(AnalogPin.P2, 0)
-let safe = 180
+let safe = 175
 let unsafe = 125
 basic.forever(function () {
     distance = sonar.ping(
