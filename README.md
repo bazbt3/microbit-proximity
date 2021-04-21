@@ -1,6 +1,6 @@
 ## What is this?
 
-A program to indicate if a person or object is detected within a range of safety zones by illuminating an RGB LED, sounding a tone, displaying a graphic and/or scrolling message.  Created for the [BBC micro:bit V2 computer](https://microbit.org) interfaced with an Osoyoo sensors & devices STEM kit and a third-party interface board.
+A project to indicate if a person or object is detected within a range of safety zones, by illuminating an RGB LED, sounding a tone, displaying a graphic and/or scrolling message.  Created for the [BBC micro:bit V2 computer](https://microbit.org) interfaced with an Osoyoo sensors & devices STEM kit and a third-party interface board.
 
 LED colours indicate:
 
