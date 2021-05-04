@@ -40,15 +40,6 @@ I made the rookie mistake of thinking all the micro:bit and thus the Osoyoo boar
 
 > Open this page at [https://bazbt3.github.io/microbit-proximity/](https://bazbt3.github.io/microbit-proximity/)
 
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/bazbt3/microbit-proximity** and import
-
 ## Edit this project ![Build status badge](https://github.com/bazbt3/microbit-proximity/workflows/MakeCode/badge.svg)
 
 To edit this repository in MakeCode.
