@@ -16,7 +16,7 @@ function setred () {
         music.playTone(523, music.beat(BeatFraction.Quarter))
         basic.pause(100)
     }
-    basic.showString("Feeling lucky?")
+    basic.showString("Uh-oh!")
     images.iconImage(IconNames.Skull).showImage(0)
 }
 function setgreen () {

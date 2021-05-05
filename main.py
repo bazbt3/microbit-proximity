@@ -1,5 +1,5 @@
 def setamber():
-    pins.analog_write_pin(AnalogPin.P0, 762)
+    pins.analog_write_pin(AnalogPin.P0, 767)
     pins.analog_write_pin(AnalogPin.P1, 63)
     pins.analog_write_pin(AnalogPin.P2, 0)
     for index in range(1):
@@ -20,20 +20,22 @@ def setgreen():
     pins.analog_write_pin(AnalogPin.P1, 511)
     pins.analog_write_pin(AnalogPin.P2, 0)
     images.icon_image(IconNames.HEART).show_image(0)
-range2 = 0
+distance = 0
 pins.analog_write_pin(AnalogPin.P0, 0)
 pins.analog_write_pin(AnalogPin.P1, 0)
 pins.analog_write_pin(AnalogPin.P2, 0)
+safe = 175
+unsafe = 125
 
 def on_forever():
-    global range2
-    range2 = sonar.ping(DigitalPin.P8, DigitalPin.P16, PingUnit.CENTIMETERS)
-    basic.show_number(range2)
-    if range2 == 0 or range2 > 170:
+    global distance
+    distance = sonar.ping(DigitalPin.P8, DigitalPin.P16, PingUnit.CENTIMETERS)
+    basic.show_number(distance)
+    if distance == 0 or distance > safe:
         setgreen()
-    elif range2 > 125:
+    elif distance > unsafe:
         setamber()
-    elif range2 < 125:
+    elif distance < unsafe:
         setred()
     basic.pause(5000)
 basic.forever(on_forever)
