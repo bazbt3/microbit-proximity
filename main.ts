@@ -16,7 +16,8 @@ function setred () {
         music.playTone(523, music.beat(BeatFraction.Quarter))
         basic.pause(100)
     }
-    basic.showString("Uh-oh!")
+    text = text_list[randint(0, text_list.length) - 1]
+    basic.showString("" + (text))
     images.iconImage(IconNames.Skull).showImage(0)
 }
 function setgreen () {
@@ -26,11 +27,14 @@ function setgreen () {
     images.iconImage(IconNames.Heart).showImage(0)
 }
 let distance = 0
+let text = ""
+let text_list: string[] = []
 pins.analogWritePin(AnalogPin.P0, 0)
 pins.analogWritePin(AnalogPin.P1, 0)
 pins.analogWritePin(AnalogPin.P2, 0)
 let safe = 175
 let unsafe = 125
+text_list = ["Uh-oh!", "Eeek!", "Oops!", "Eff-off!", "Wibble!"]
 basic.forever(function () {
     distance = sonar.ping(
     DigitalPin.P8,
