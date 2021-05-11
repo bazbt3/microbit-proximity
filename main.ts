@@ -16,7 +16,7 @@ function setred () {
         music.playTone(523, music.beat(BeatFraction.Quarter))
         basic.pause(100)
     }
-    text = text_list[randint(0, text_list.length) - 1]
+    text = text_list[randint(0, text_list.length - 1)]
     basic.showString("" + (text))
     images.iconImage(IconNames.Skull).showImage(0)
 }
