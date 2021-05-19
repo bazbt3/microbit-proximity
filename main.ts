@@ -3,7 +3,6 @@ function setamber () {
     pins.analogWritePin(AnalogPin.P1, 63)
     pins.analogWritePin(AnalogPin.P2, 0)
     for (let index = 0; index < 1; index++) {
-        music.playTone(262, music.beat(BeatFraction.Quarter))
         basic.pause(100)
     }
     images.iconImage(IconNames.Sad).showImage(0)
@@ -13,7 +12,6 @@ function setred () {
     pins.analogWritePin(AnalogPin.P1, 0)
     pins.analogWritePin(AnalogPin.P2, 0)
     for (let index = 0; index < 2; index++) {
-        music.playTone(523, music.beat(BeatFraction.Quarter))
         basic.pause(100)
     }
     text = text_list[randint(0, text_list.length - 1)]
